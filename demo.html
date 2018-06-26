@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReDoc</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+
+    <!--
+    ReDoc doesn't change outer page styles
+    -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <redoc spec-url='http://petstore.swagger.io/v2/swagger.json'></redoc>
+    <!--<script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>-->
+    <script src="./redoc.standalone.js"></script>
+  </body>
+  <div id="form" style="margin-left: 20px; display:none;">
+    <div>
+      <form id="requestForm"/>
+    </div>
+    <input type="checkbox" id="https"></input> https
+    <p>
+    <span id="sendButton" style="border-radius: 5px; background: #73AD21; padding: 5px; width:50px; color: white"><b>Send</b></span>
+    <p>
+    <div id="target"/>
+  </div>
+
+</html>
+
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+
+<script>
+var defaultHost = "qa-21-www.edmunds.com" // apply this host in case the swagger.json doesn't have a .host property
+var redocLoadingWaitTime = 2000;  // in miliseconds, set this wait time so that try-out is initialized after redoc is fully loaded.
+</script>
+
+<script src="./redoc-tryout.js"></script>
