@@ -16,6 +16,4 @@ Clone the project. Open demo.html in the browser. The `Try-Out` button should sh
 
 Global variable `var defaultHost`: by default, the http will take in the .host property in the swagger.json. If the swagger.json doesn't have a .host property, `defaultHost` will be applied.
 
-Global variable `var redocLoadingWaitTime`: this value in miliseconds is used for The Try-Out feature to wait for ReDoc to be fully loaded.
-
-
+Global variable `var redocLoadingWaitTime`: this value in miliseconds is used for The Try-Out feature to wait for ReDoc to be fully loaded. If your ReDoc loads in 7 seconds, let this value be 8000 miliseonds.
